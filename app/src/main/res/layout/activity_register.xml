@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="75dp"
+        android:text="@string/Register"
+        android:textAlignment="center"
+        android:textSize="35sp"
+        android:textColor="@android:color/black"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="60dp">
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+        <EditText
+        android:id="@+id/et_partner_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_margin="20dp"
+        android:hint="@string/full_name"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/et_partner_mobile"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+
+        android:layout_margin="20dp"
+        android:hint="@string/phone_number"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+
+
+            android:layout_height="wrap_content">
+
+
+
+        <EditText
+            android:id="@+id/et_partner_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/password"/>
+
+        </android.support.design.widget.TextInputLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center">
+
+    <Button
+        android:id="@+id/btn_register_partner"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/Register"
+        android:textColor="@color/colorWhite"
+        />
+
+
+
+    </RelativeLayout>
+
+
+
+    </LinearLayout>
+</LinearLayout>

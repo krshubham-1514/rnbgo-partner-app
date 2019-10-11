@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1009953497988",
+    "firebase_url": "https://rnbgopartner.firebaseio.com",
+    "project_id": "rnbgopartner",
+    "storage_bucket": "rnbgopartner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1009953497988:android:6d759b779d6b815a51f3d1",
+        "android_client_info": {
+          "package_name": "com.project.rnbgopartner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1009953497988-1liqeg52e7vu7ltk985btunadg54vjaa.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.project.rnbgopartner",
+            "certificate_hash": "13c9fc106ccda485dbc2c34fb52d7a18e6f841c1"
+          }
+        },
+        {
+          "client_id": "1009953497988-2bknqpr8d1diea69rqr8b1s48k3v8ks9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAIsh8QYVzyP917XWXWojz4gGImc8V6-m0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1009953497988-2bknqpr8d1diea69rqr8b1s48k3v8ks9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RoomRegisterActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="125dp"
+        android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/register_room"
+        android:textColor="@android:color/black"
+        android:textSize="35sp"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="45dp">
+
+
+        <EditText
+            android:id="@+id/room_owner_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:hint="@string/room_owner_name"
+            />
+
+
+
+
+
+
+
+    <EditText
+        android:id="@+id/room_owner_contact_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:hint="@string/phone_number"/>
+
+
+
+
+
+        <Button android:id="@+id/btn_register_room"
+            android:layout_width="120dp"
+            android:layout_height="60dp"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="center"
+
+            android:background="@drawable/roundedbutton"
+            android:textColor="@color/colorWhite"
+            android:text="@string/Continue"/>
+
+
+    </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+
+</LinearLayout>
