@@ -53,7 +53,7 @@
 
 
         android:layout_margin="20dp"
-        android:hint="@string/phone_number"/>
+        android:hint="@string/contact"/>
 
         </android.support.design.widget.TextInputLayout>
 

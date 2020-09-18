@@ -71,7 +71,7 @@ public class RegisterActivity extends AppCompatActivity {
         final String parnter_name,partner_mobile_number,partner_password;
 
         parnter_name=et_partner_name.getText().toString();
-        partner_mobile_number=et_partner_mobile_number.getText().toString();
+        partner_mobile_number="+91"+et_partner_mobile_number.getText().toString();
         partner_password=et_partner_password.getText().toString();
 
         //function to sigin using the phone number

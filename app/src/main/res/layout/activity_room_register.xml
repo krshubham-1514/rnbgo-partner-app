@@ -1,40 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+
+
     tools:context=".RoomRegisterActivity">
+
+
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="125dp"
+        android:layout_marginBottom="80dp"
+
+        android:layout_margin="20dp"
         android:orientation="vertical">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/register_room"
-        android:textColor="@android:color/black"
-        android:textSize="35sp"
-        android:layout_marginTop="30dp"
-        android:textAlignment="center"/>
+
+
+
+
 
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="45dp">
+        android:layout_marginTop="15dp">
 
 
         <EditText
             android:id="@+id/room_owner_name"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_marginBottom="@dimen/activity_bottom_margin"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:padding="@dimen/padding_form_input"
+            android:background="@drawable/custom_boder"
             android:hint="@string/room_owner_name"
             />
 
@@ -48,17 +53,509 @@
         android:id="@+id/room_owner_contact_number"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="20dp"
+        android:layout_marginBottom="@dimen/activity_bottom_margin"
+        android:background="@drawable/custom_boder"
+        android:layout_marginTop="@dimen/activity_top_margin"
+        android:padding="@dimen/padding_form_input"
         android:hint="@string/phone_number"/>
+
+
+        <EditText
+        android:id="@+id/room_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+            android:background="@drawable/custom_boder"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:padding="@dimen/padding_form_input"
+        android:hint="@string/Address"/>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_bottom_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/room_facility"
+                android:textStyle="bold"
+                android:textColor="@android:color/black" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="horizontal">
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cb_facility_bed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/bed" />
+                <CheckBox
+                    android:id="@+id/cb_facility_fan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/fan" />
+                <CheckBox
+                    android:id="@+id/cb_facility_refrigerator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/refrigerator" />
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cb_facility_ac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/ac" />
+                <CheckBox
+                    android:id="@+id/cb_facility_table"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/table" />
+
+
+                <CheckBox
+                    android:id="@+id/cb_facility_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv" />
+            </TableRow>
+            <TableRow>
+                <CheckBox
+                    android:id="@+id/cb_facility_chair"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chair" />
+                <CheckBox
+                    android:id="@+id/cb_facility_washing_maching"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/washing_machine" />
+
+            </TableRow>
+        </TableLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_bottom_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/people_adjust"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/cbone_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one" />
+            <CheckBox
+                android:id="@+id/cbtwo_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two" />
+            <CheckBox
+                android:id="@+id/cbthree_people"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three" />
+
+                <CheckBox
+                    android:id="@+id/cbfour_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/four" />
+                <CheckBox
+                    android:id="@+id/cbmore_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/more" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_bottom_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:text="@string/room_condition"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="horizontal">
+
+                <Spinner
+                    android:id="@+id/spinner_room_condition"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_boder"
+                    android:layout_height="wrap_content">
+
+                </Spinner>
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_bottom_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/people_type"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="horizontal">
+
+                <CheckBox
+                    android:id="@+id/cbboys"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/boys" />
+                <CheckBox
+                    android:id="@+id/cbgirls"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/girls" />
+                <CheckBox
+                    android:id="@+id/cbfamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/family" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/activity_top_margin"
+        android:layout_marginBottom="@dimen/activity_bottom_margin"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/room_type"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:orientation="horizontal">
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TableRow>
+            <CheckBox
+                android:id="@+id/one_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one_room" />
+            <CheckBox
+                android:id="@+id/two_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two_room" />
+            <CheckBox
+                android:id="@+id/three_room"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three_room" />
+
+                </TableRow>
+                <TableRow>
+            <CheckBox
+                android:id="@+id/one_bhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/one_bhk" />
+            <CheckBox
+                android:id="@+id/two_bhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/two_bhk" />
+            <CheckBox
+                android:id="@+id/three_bhk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/three_bhk" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_bottom_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/room_rent"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_room_rent"
+                android:layout_width="match_parent"
+                android:padding="@dimen/padding_form_input"
+                android:background="@drawable/custom_boder"
+                android:layout_height="wrap_content"
+                />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_bottom_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/extra_charge"
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_extra_charge"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_boder"
+                    android:padding="@dimen/padding_form_input"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:layout_marginBottom="@dimen/activity_bottom_margin"
+            android:layout_height="wrap_content">
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:text="@string/desc"
+                android:textColor="@android:color/black"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/et_description"
+                    android:layout_width="match_parent"
+                    android:background="@drawable/custom_boder"
+                    android:padding="@dimen/padding_form_input"
+                    android:layout_height="wrap_content"
+                    />
+
+
+
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/electric_bill"
+                    android:textColor="@android:color/black"/>
+
+                <Switch
+                    android:id="@+id/sw_electric_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/activity_top_margin"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/water_bill"
+                    android:textColor="@android:color/black"/>
+
+                <Switch
+                    android:id="@+id/sw_water_bill"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="@dimen/activity_top_margin"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/checkin"
+                android:textColor="@android:color/black"/>
+
+            <Switch
+                android:id="@+id/room_checkin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 
         <Button android:id="@+id/btn_register_room"
-            android:layout_width="120dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
             android:layout_gravity="center"
 
             android:background="@drawable/roundedbutton"
@@ -82,4 +579,4 @@
 
     </LinearLayout>
 
-</LinearLayout>
+</ScrollView>

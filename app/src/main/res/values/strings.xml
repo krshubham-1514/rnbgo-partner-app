@@ -3,7 +3,8 @@
     <string name="Signin">SignIn</string>
     <string name="Register">Register</string>
     <string name="full_name">Full Name</string>
-    <string name="phone_number">Phone Number</string>
+    <string name="phone_number">Room Owner Contact Number</string>
+    <string name="contact">Phone Number</string>
     <string name="title_activity_main">MainActivity</string>
     <string name="room_register">Room Register</string>
     <string name="room_owner_name">Room Owner Name</string>
@@ -15,7 +16,7 @@
     <string name="prompt_password">Password</string>
     <string name="action_sign_in">Sign in or register</string>
     <string name="action_sign_in_short">Sign in</string>
-    <string name="welcome">"Welcome !"</string>
+    <string name="welcome">"Welcome"</string>
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
@@ -24,8 +25,56 @@
     <string name="do_register">Do not have Account?Register.</string>
     <string name="Opt">OTP</string>
     <string name="Verify">Verify</string>
-    <string name="register_room">Register Room</string>
+    <string name="register_room">Register New Room</string>
     <string name="register_success">Registration Successful!</string>
     <string name="register_again">Register</string>
+    <string name="people_adjust">How Many People Can Adjust?</string>
     <string name="register_other_room">Register Another Room</string>
+    <string name="listed_room">Registred Room</string>
+    <string name="profile">My Profile</string>
+    <string name="ios">test</string>
+    <string name="room_rent">Room Rent</string>
+    <string name="room_condition">Room Condition(Is room/flat furnished or not)?</string>
+    <string name="people_type">Who can stay?</string>
+    <string name="room_type">How many room?</string>
+    <string name="electric_bill">Is Electric bills included in room rent?</string>
+    <string name="water_bill">Is Water bills included in room rent?</string>
+    <string name="desc">Additional Description.</string>
+
+
+    <string name="bed">Bed</string>
+    <string name="fan">Fan</string>
+    <string name="refrigerator">Refrigerator</string>
+    <string name="ac">A.C</string>
+    <string name="table">Table</string>
+    <string name="tv">T.V.</string>
+    <string name="washing_machine">Washing Machine</string>
+    <string name="chair">Chair</string>
+
+
+    <string name="boys">Boys</string>
+    <string name="girls">Girls</string>
+    <string name="family">Family</string>
+
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="other">other</string>
+
+    <string name="one_room">1 Room</string>
+    <string name="two_room">2 Room</string>
+    <string name="three_room">3 Room</string>
+    <string name="one_bhk">1 BHK</string>
+    <string name="two_bhk">2 BHK</string>
+    <string name="three_bhk">3 BHK</string>
+
+
+    <string name="checkin">Is room ready to move In?</string>
+    <string name="room_facility">What is available in room?</string>
+    <string name="extra_charge">Extra charge(like maintenance charge)</string>
+    <string name="four">4</string>
+    <string name="more">More</string>
+    <string name="logout">Logout</string>
+    <string name="room_images">Upload photos of Room(Atleast 5 photos)</string>
+
 </resources>
